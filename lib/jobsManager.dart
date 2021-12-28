@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import './jobs.dart';
 
 class JobsManager extends StatefulWidget {
+  final String startingJob;
+
+  JobsManager(this.startingJob);
+
   @override
   State<StatefulWidget> createState() {
     return _JobsManagerState();
@@ -10,7 +14,13 @@ class JobsManager extends StatefulWidget {
 }
 
 class _JobsManagerState extends State<JobsManager> {
-  List<String> _jobs = ['Junior Program Tester'];
+  List<String> _jobs = [];
+
+  @override
+  void initState() {
+    _jobs.add(widget.startingJob);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

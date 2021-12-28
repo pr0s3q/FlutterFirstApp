@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter First Test App'),
         ),
-        body: JobsManager(),
+        body: JobsManager('Junior Program Tester'),
       ),
     );
   }
