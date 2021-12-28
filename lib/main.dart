@@ -10,6 +10,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter First Test App'),
         ),
+        body: Card(
+          child: Column(
+            children: <Widget>[
+              Image.asset('assets/c#.jpg'),
+              Text('.net devs paradise')
+            ],
+          ),
+        ),
       ),
     );
   }
